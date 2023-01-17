@@ -1,0 +1,7 @@
+.pytest_cache/
+venv/
+.idea/
+.DS_Store
+tests/.DS_Store
+tests/.DS_Store
+*.pyc
