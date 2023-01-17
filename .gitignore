@@ -1,7 +1,5 @@
-.pytest_cache/
+*.pytest_cache/
 venv/
 .idea/
-.DS_Store
-tests/.DS_Store
-tests/.DS_Store
+*.DS_Store
 *.pyc
