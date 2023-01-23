@@ -19,7 +19,12 @@ class LoginPage(Page):
         pswd.send_keys(text)
 
     def click_login(self):
-        self.find_element(LoginPage.LOGIN_BTN).click()
+        self.click(LoginPage.LOGIN_BTN)
+
+    def login(self, email, passwd):
+        self.fill_password(passwd)
+        self.fill_email(email)
+        self.click_login()
 
     def get_snack_bar_text(self):
         return self.find_element(LoginPage.SNACK_BAR).text

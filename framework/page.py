@@ -8,3 +8,6 @@ class Page:
 
     def find_element(self, elem_id):
         return self.driver.find_element(By.ID, elem_id)
+
+    def click(self, elem_id):
+        self.find_element(elem_id).click()
