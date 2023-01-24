@@ -2,6 +2,9 @@ from .page import Page
 
 
 class LoginPage(Page):
+    """
+    Creates object of the page shown after user press 'Log in' on start page
+    """
     EMAIL_FLD = 'com.ajaxsystems:id/login'
     PASSWORD_FLD = 'com.ajaxsystems:id/password'
     LOGIN_BTN = 'com.ajaxsystems:id/next'

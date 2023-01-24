@@ -2,6 +2,9 @@ from framework.page import Page
 
 
 class MainPage(Page):
+    """
+    Creates object of the page shown after user logs in
+    """
     SIDE_BAR = 'com.ajaxsystems:id/menuDrawer'
     ADD_HUB_SIDE = 'com.ajaxsystems:id/addHub'
     APP_SETTINGS = 'com.ajaxsystems:id/settings'

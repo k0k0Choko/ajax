@@ -2,6 +2,9 @@ import subprocess
 
 
 def get_device_udid():
+    """
+    Calls the 'adb devices' command and parses the output to get device udid.
+    """
     output = subprocess.check_output(['adb', 'devices']).decode('ascii')
     device = output.split('\n')[1]
     udid = device.split('\t')[0]
